@@ -23,12 +23,18 @@ font-size:200%;
       background-postion:center;
       background-repeat:no-repeat;
       background-size:cover;
-      height: 120%;
-      width:auto;
+       height: 100vh;  /* Sets the container to full viewport height */
+       width: 100vw;   /* Sets the container to full viewport width */
       padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 input,label {
 height:100%;
@@ -369,14 +375,13 @@ padding:10px;
             <img src="Images/logo.jpg" alt="Logo" />  <span class="inline-space">   </span>
 
 <br>
-<br>
 
             <h1> </h1> <b><i> &copy;  CONTACT <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span> <span class="inline-space">   </span>  @ TRAVEL WORLD</b></></i>
          </div>
         </div>
+<br>
+<br>
 
-<br>
-<br>
 
 <form action="insert.php" method="post">
 ID:<input type="text" name="id" value = ""/><!--<br><br>-->
@@ -386,7 +391,7 @@ Names:<input type="text" name="name" value = ""/><!--<br><br>-->
 Surname:<input type="text" name="surname" value = "" /><br><br>
 email:<input type="text" name="surname" value = "" /><!--<br><br>-->
 
- <span class="inline-space">   </span>   <span class="inline-space">   </span>  <span class="inline-space">   </span>
+    </span>   <span class="inline-space">   </span>  <span class="inline-space">   </span>
 Cell:<input type="numbers" name="surname" value = "" /><!--<br><br>-->
 
   </span> <span class="inline-space">   </span>   <span class="inline-space">   </span>
@@ -399,21 +404,27 @@ Cell:<input type="numbers" name="surname" value = "" /><!--<br><br>-->
 </select>   <br><br>
 
 
-
-
 <label for="message">Message:</label>
 <textarea class="custom-textarea" rows="1" cols="60.4" placeholder="Type your message here..."></textarea><br><br>
 
 <input type="submit" value="Submit">           <input type="reset">
 
 
-
-
   <!--<label for="message">Message:</label>
                     <textarea id="message" name="message" rows="1" required></textarea>-->
                 </div> <!-- <button type="submit" class="submit-btn">Send Message</button>-->
-
+<br>
+<br>
 </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
     <button class="open-btn" onclick="openNav()">☰ Open Navigation</button>
 
